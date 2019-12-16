@@ -9,11 +9,12 @@ VueRouter.prototype.push = function push(location) {
 }
 Vue.use(VueRouter);
 
-
+import page0 from "./page0";
 import page1 from "./page1";
 import page2 from "./page2";
 
 const routes=[
+    {path:"/page0",component:page0},
     {path:"/page1",component:page1},
     {path:"/page2",component:page2}
 ]

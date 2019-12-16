@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <button @click="method1">page1</button>
-    <button @click="method2">page2</button>
+    <button @click="method0">css动画</button>
+    <!-- <button @click="method1">page1</button>
+    <button @click="method2">page2</button> -->
     <router-view></router-view>
   </div>
 </template>
@@ -10,6 +11,9 @@
 export default {
   name: 'App',
   methods:{
+    method0(){
+      this.$router.push('/page0');
+    },
     method1(){
       this.$router.push('/page1');
     },
